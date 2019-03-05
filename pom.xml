@@ -11,6 +11,8 @@
 	<groupId>cman.main</groupId>
 	<artifactId>Cman</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
+	
 	<name>Cman</name>
 	<description>project for common handling</description>
 

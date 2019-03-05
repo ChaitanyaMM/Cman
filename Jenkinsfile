@@ -6,12 +6,23 @@ pipeline {
   }
   agent any
   stages {
-    stage('Building image') {
+    stage('Cman') {
+      steps{
+        script {
+         echo 'holla! cman is connected!'
+        }
+      }
+    }
+ 
+     stage('Building image') {
       steps{
         script {
           docker.build registry + ":$BUILD_NUMBER"
         }
       }
     }
-  }
+   
+  
+  
+  
 }
